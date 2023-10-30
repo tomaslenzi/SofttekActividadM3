@@ -29,16 +29,6 @@ public class DataBaseConnection {
         Task newTask = new Task("Otra nueva Tarea SQL", "Otra descripción de la nueva tarea SQL");
         dbConnection.addTask(newTask);*/
 
-        // Prueba del método updateTask
-        // Task updatedTask = new Task("Tarea Actualizada SQL", "Descripción actualizada SQL");
-        //updatedTask.setId(1); // Establece el ID de la tarea a actualizar
-        //dbConnection.updateTask(updatedTask);
-
-        // Prueba del método deleteTask
-        /*int taskIdToDelete = 2; // Cambia esto al ID de la tarea que deseas eliminar
-        dbConnection.deleteTask(taskIdToDelete);*/
-
-        // Muestra un mensaje para indicar que las pruebas han finalizado
         System.out.println("Pruebas completadas JEJE.");
     }
 
@@ -228,7 +218,7 @@ public class DataBaseConnection {
             } catch (SQLException e) {
                 e.printStackTrace();
             } finally {
-                // Cerrar la conexión y recursos aquí
+                // Cerrar la conexión
             }
         }
     }
